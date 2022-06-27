@@ -1,2 +1,4 @@
 /free-edition/*.zip
+/free-edition/graphdb-free-*/*
 /graphdb-data
+.DS_Store
