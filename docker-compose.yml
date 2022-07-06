@@ -7,7 +7,7 @@ services:
       context: ./free-edition
       dockerfile: Dockerfile
       args:
-        version: 9.11.1
+        version: 10.0.0
     restart: unless-stopped
     environment: 
       GDB_JAVA_OPTS: >-
