@@ -4,7 +4,7 @@ services:
   graphdb:
     container_name: graphdb
     build:
-      context: ./free-edition
+      context: .
       dockerfile: Dockerfile
       args:
         version: 10.0.0
@@ -22,6 +22,7 @@ services:
         -Dreuse.vars.in.subselects=true
     ports: 
       - 7200:7200
+      - 7300:7300
     volumes:
       - ./graphdb-data:/opt/graphdb/home
 
